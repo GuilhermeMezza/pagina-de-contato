@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat; /*evita que a imagem se repita*/
+    background-position: top center;
+    background-size: cover; /*cobre todo o espaço visível da tela*/
+
+    /*
+    formato otimizado
+    background: image repeat position/size
+    background: url(./assets/bg-mobile.jpg) no-repeat top center/conver
+    */
+}
+
+#container{
+    width: 360px;
+    /*height: 712px;*/
+    /*border: 1px solid white;*/
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+/* alinha a imagem no centro.
+#profile{
+    text-align: center;
+}
+*/
+#profile{
+    padding: auto;
+}
+
+#profile img{
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 100px;  
+     
+}
+
+#profile p{
+    font-style:normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 8px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}
+
+/*Lista de links*/
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+ul li a{
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background-color:rgb(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+/*Pseudo-selector*/
+ul li a:hover{
+    background-color:rgb(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+}
+
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
